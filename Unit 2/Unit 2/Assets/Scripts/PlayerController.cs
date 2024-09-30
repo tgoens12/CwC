@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 20.0f;
+    public GameObject projectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +32,12 @@ public class PlayerController : MonoBehaviour
         // Horixontal Input for player
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            //Debug.Log("Space bar is " + Input.GetKey(KeyCode.Space));
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
     }
 }
