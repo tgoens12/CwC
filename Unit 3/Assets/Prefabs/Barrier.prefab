@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6605221945948667317}
   - component: {fileID: 7519620068904299945}
   - component: {fileID: 2657404106521063432}
+  - component: {fileID: 5454756938927473891}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Untagged
@@ -165,3 +166,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5454756938927473891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8049102921082009919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4f7072f51c06a46a59a4d98e9354df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
