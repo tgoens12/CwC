@@ -364,6 +364,8 @@ GameObject:
   - component: {fileID: 835818921}
   - component: {fileID: 835818920}
   - component: {fileID: 835818922}
+  - component: {fileID: 835818923}
+  - component: {fileID: 835818924}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -450,6 +452,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4f7072f51c06a46a59a4d98e9354df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &835818923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a30f8445687e3c478e9d23d42a60466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &835818924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 112.79999, y: 18.781641, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1580475858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,6 +571,7 @@ MonoBehaviour:
   jumpForce: 18
   gravityModifier: 4
   isOnGround: 1
+  gameOver: 0
 --- !u!54 &1580475861
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -561,7 +597,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!65 &1580475862
 BoxCollider:
@@ -598,7 +634,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -699,7 +735,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6605221945948667317, guid: 662fd59d646a4d44aa1add32e1635068, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.02
+      value: 21.14
       objectReference: {fileID: 0}
     - target: {fileID: 6605221945948667317, guid: 662fd59d646a4d44aa1add32e1635068, type: 3}
       propertyPath: m_LocalPosition.y
